@@ -5,12 +5,12 @@ import java.io.IOException;
 
 public class Symb {
     public static void main(String[] args) throws IOException {
-        FileReader f1in = new FileReader("C:\\Users\\lomte\\IdeaProjects\\StreamFilters\\src\\f1.txt");
-        FileReader f2in = new FileReader("C:\\Users\\lomte\\IdeaProjects\\StreamFilters\\src\\f2.txt");
-        FileReader f3in = new FileReader("C:\\Users\\lomte\\IdeaProjects\\StreamFilters\\src\\f3.txt");
-        FileWriter f2out = new FileWriter("C:\\Users\\lomte\\IdeaProjects\\StreamFilters\\src\\f2.txt");
-        FileWriter f3out = new FileWriter("C:\\Users\\lomte\\IdeaProjects\\StreamFilters\\src\\f3.txt");
-        FileWriter f4out = new FileWriter("C:\\Users\\lomte\\IdeaProjects\\StreamFilters\\src\\f4.txt");
+        FileReader f1in = new FileReader("src\\f1.txt");
+        FileReader f2in = new FileReader("src\\f2.txt");
+        FileReader f3in = new FileReader("src\\f3.txt");
+        FileWriter f2out = new FileWriter("src\\f2.txt");
+        FileWriter f3out = new FileWriter("src\\f3.txt");
+        FileWriter f4out = new FileWriter("src\\f4.txt");
         int words = 0;
         int symb = 0;
         while (f1in.ready()){
@@ -36,7 +36,7 @@ public class Symb {
         f3out.flush();
         char f2;
         char f3;
-        FileReader f1oin = new FileReader("C:\\Users\\lomte\\IdeaProjects\\StreamFilters\\src\\f1.txt");
+        FileReader f1oin = new FileReader("src\\f1.txt");
         while (f1oin.ready()){
             char ch = (char) f1oin.read();
             if(ch == '\n'){
